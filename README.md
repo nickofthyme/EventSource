@@ -1,6 +1,7 @@
 
 This fork provide the following on top of the original:
 
+- ES5 module exprot to avoid transpile issues
 - The ability to provide custom HTTP headers in the options object (e.g Authorization)
 - The module returns the actual EventSource implementation, rather than sometimes polyfilling, sometimes not.
 - Typescript typings

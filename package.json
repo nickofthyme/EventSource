@@ -1,11 +1,11 @@
 {
-  "name": "ng-event-source",
-  "version": "1.0.14",
+  "name": "ng-event-source-es5",
+  "version": "0.0.1",
   "main": "eventsource.js",
   "typings": "typings.d.ts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sguiheux/EventSource.git"
+    "url": "git://github.com/nickofthyme/EventSource.git"
   },
   "keywords": [
     "sse",
@@ -19,10 +19,10 @@
     "angular 4",
     "webpack"
   ],
-  "author": "Steven Guiheux (https://github.com/sguiheux)",
+  "author": "Nick Partridge (https://github.com/nickofthyme)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sguiheux/EventSource/issues"
+    "url": "https://github.com/nickofthyme/EventSource/issues"
   },
-  "homepage": "https://github.com/sguiheux/EventSource"
+  "homepage": "https://github.com/nickofthyme/EventSource"
 }
