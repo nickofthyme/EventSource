@@ -618,8 +618,16 @@ var EventSourcePolyfill = (function (global) {
 
 }(typeof window !== 'undefined' ? window : this));
 
-module.exports = { 
-    default: global.EventSource || EventSourcePolyfill,
-    EventSource: global.EventSource || EventSourcePolyfill,
-    EventSourcePolyfill: EventSourcePolyfill
-};
+if (typeof window === 'object') {
+    module.exports = { 
+        default: window.EventSource || EventSourcePolyfill,
+        EventSource: window.EventSource || EventSourcePolyfill,
+        EventSourcePolyfill: EventSourcePolyfill
+    };
+} else {
+    module.exports = { 
+        default: EventSourcePolyfill,
+        EventSource: EventSourcePolyfill,
+        EventSourcePolyfill: EventSourcePolyfill
+    };
+}
