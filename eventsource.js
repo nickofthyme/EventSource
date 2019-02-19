@@ -618,4 +618,8 @@ var EventSourcePolyfill = (function (global) {
 
 }(typeof window !== 'undefined' ? window : this));
 
-module.exports = { 'default': EventSourcePolyfill };
+module.exports = { 
+        default: global.EventSource || EventSourcePolyfill,
+        EventSource: global.EventSource || EventSourcePolyfill,
+        EventSourcePolyfill: EventSourcePolyfill
+    };
