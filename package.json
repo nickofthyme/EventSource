@@ -1,6 +1,6 @@
 {
   "name": "es5-event-source",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "eventsource.js",
   "typings": "typings.d.ts",
   "repository": {
