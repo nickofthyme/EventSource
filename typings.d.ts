@@ -1,5 +1,7 @@
 declare enum ReadyState {CONNECTING = 0, OPEN = 1, CLOSED = 2}
 
+declare var EventSource: any;
+
 export class EventSourcePolyfill extends EventTarget {
     CONNECTING: ReadyState;
     OPEN: ReadyState;
